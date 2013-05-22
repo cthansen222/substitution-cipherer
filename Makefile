@@ -10,16 +10,10 @@ CXX = g++
 #  -pedantic                  require compliance with ANSI standard
 #  -O0                        do not optimize generated code
 #  -std=c++0x                 go with the c++0x extensions for thread support, unordered maps, etc
-#  -D_GLIBCXX_USE_NANOSLEEP   included for this_thread::sleep_for and this_thread::sleep_until support
-#  -D_GLIBCXX_USE_SCHED_YIELD included for this_thread::yield support
-CXXFLAGS = -g -Wall -pedantic -O0 -std=c++0x -D_GLIBCXX_USE_NANOSLEEP -D_GLIBCXX_USE_SCHED_YIELD
+CXXFLAGS = -g -Wall -pedantic -O0 -std=c++0x
 
 # The LDFLAGS variable sets flags for linker
 #  -lm       link in libm (math library)
-#  -lpthread link in libpthread (thread library) to back C++11 extensions
-#  -lrand    link to simple random number generator
-#  -lthreads link to convenience functions layering over C++11 threads
-#  -lxml2    link in libxml2 (XML processing library)
 LDFLAGS = -lm
 
 # In this section, you list the files that are part of the project.
